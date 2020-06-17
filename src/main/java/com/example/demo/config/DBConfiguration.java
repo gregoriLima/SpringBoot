@@ -5,7 +5,10 @@ import org.springframework.context.annotation.*;
 import lombok.*;
 
 @Configuration //indica que é um arquivo de configuração lido na subida da aplicação
+
+//para mapear as propriedades que tem chaves em comum com esta classe
 @ConfigurationProperties ("spring.datasource") //indica tudo com o prefixo de spring.datasource é mapeado para dentro do conjunto
+
 @Getter
 @Setter//annotation do lombok que indica que as propriedades irão receber automaticamente os getters e setters em tempo de compilação
 public class DBConfiguration {
