@@ -30,7 +30,7 @@ public class DBConfiguration {
 		//declarando os métodos que farão os mapeamentos da propriedades
 		//para dentro do sistema e que vai subir ao definir o tipo de profile que se quer
 		
-		@Profile("dev")
+		@Profile("dev") //esta annotation deve ser combinada com a @Configuration a nível de classe
 		@Bean //dizendo que este método é instanciado como um bean, 
 				//para que este conteúdo seja mostrado logo na subida do sistema
 		public String testDatabaseConnection() {
